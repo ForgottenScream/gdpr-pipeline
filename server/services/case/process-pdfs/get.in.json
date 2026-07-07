@@ -1,0 +1,7 @@
+{
+  "tags": ["case"],
+  "summary": "Process case PDFs",
+  "description": "Retrieves cases with PDF documents from the database and processes them using OpenRouter API to extract structured enforcement data.",
+  "type": "object",
+  "properties": {}
+}

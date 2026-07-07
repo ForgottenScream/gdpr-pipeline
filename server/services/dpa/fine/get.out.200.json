@@ -1,0 +1,9 @@
+{
+  "result": true,
+  "data": [
+    {
+      "dpa_name": "string",
+      "total_fines": 0.0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "info": {
+    "title": "GDPR Pipeline",
+    "description": "REST API of GDPR Pipeline.",
+    "version": "1.0"
+  },
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

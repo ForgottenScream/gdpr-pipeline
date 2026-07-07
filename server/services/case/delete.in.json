@@ -1,0 +1,10 @@
+{
+    "tags":[
+        "case"
+    ],
+    "summary": "Delete all Cases",
+    "description": "Delete all cases.",
+    "type": "object",
+    "properties": {}
+    }
+}

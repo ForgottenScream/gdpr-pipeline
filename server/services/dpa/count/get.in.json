@@ -1,0 +1,19 @@
+{
+    "tags": ["DPA"],
+    "summary": "Fetches Case Sum for different Countries",
+    "properties": {
+        "start_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Start date for filtering cases (format: YYYY-MM-DD). Required.",
+            "example": "2000-01-01"
+        },
+        "end_date": {
+            "type": "string",
+            "format": "date",
+            "description": "End date for filtering cases (format: YYYY-MM-DD). Defaults to today if omitted.",
+            "example": "2025-12-31"
+        }
+    },
+    "required": ["start_date"]
+}

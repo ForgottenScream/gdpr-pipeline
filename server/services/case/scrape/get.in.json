@@ -1,0 +1,7 @@
+{
+    "tags": ["case"],
+    "summary": "Scrape All Cases",
+    "description": "Triggers scraping of all cases from both ICO and CMS sources. Delegates to case/scrape/ico/get and case/scrape/cms/get services.",
+    "properties": {},
+    "required": []
+}

@@ -1,0 +1,48 @@
+{
+  "commands": [{
+    "command": "bun run watch",
+    "enabled": false,
+    "install": "bun install",
+    "path": "ui"
+  }],
+  "cors": [{
+    "enabled": true,
+    "origins": ["*"]
+  }],
+  "openapi": {
+    "host": "http://localhost:9000",
+    "basePath": "/services",
+    "schemes": [ "http" ],
+    "servers": [
+      {
+        "url": "http://localhost:9000/services",
+        "description": "Local Development"
+      }
+    ]
+  },
+  "cron": {"jobs": []},
+  "db": {"default": {
+    "engine": "pg",
+    "host": "localhost",
+    "name": "gdpr_pipeline",
+    "password": "password",
+    "port": "5432",
+    "username": "gdpr_user"
+  }},
+  "language": "en_GB",
+  "locale": "en_GB",
+  "name": "gdpr_pipeline",
+  "remote": {},
+  "settings": {
+      "public": {},
+      "llm_api_key": "INSERT-API-KEY-HERE"
+  },
+  "setup": {
+    "enabled": true,
+    "schema": {
+      "auto_create": true,
+      "execution": true
+    },
+    "scripts": {"execution": true}
+  }
+}

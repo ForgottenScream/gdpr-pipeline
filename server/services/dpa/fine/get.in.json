@@ -1,0 +1,20 @@
+{
+    "tags": ["DPA"],
+    "summary": "Fetch Fines",
+    "description": "Retrieves the total fines for each DPA, ordered by DPA name. Requires `start_date` (YYYY-MM-DD). If `end_date` is omitted, defaults to today. If both are provided, `start_date` must be <= `end_date`.",
+    "properties": {
+        "start_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Start date for filtering fines (format: YYYY-MM-DD). Required.",
+            "example": "2000-01-01"
+        },
+        "end_date": {
+            "type": "string",
+            "format": "date",
+            "description": "End date for filtering fines (format: YYYY-MM-DD). Defaults to today if omitted.",
+            "example": "2025-12-31"
+        }
+    },
+    "required": ["start_date"]
+}

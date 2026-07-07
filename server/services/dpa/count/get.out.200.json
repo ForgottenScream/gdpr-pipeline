@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "boolean",
+      "description": "Indicates if the query was successful"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "dpa_name": {
+            "type": "string",
+            "description": "Name of the DPA"
+          },
+          "case_count": {
+            "type": "integer",
+            "description": "Number of cases associated with the DPA"
+          },
+          "source_type": {
+            "type": "string",
+            "description": "Type of the DPA source"
+          }
+        }
+      }
+    }
+  }
+}

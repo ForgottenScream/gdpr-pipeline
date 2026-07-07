@@ -1,0 +1,7 @@
+{
+    "tags": ["LLM"],
+    "summary": "Run LLM Analysis on Case Data",
+    "description": "Executes predefined LLM analysis tasks on case data. Runs three comparisons: ICO enforcement (UK GDPR vs PECR/DPA 2018), ICO source comparison (Primary vs Secondary), and DPA enforcement strategy comparison (Ireland DPC vs Spain AEPD vs France CNIL).",
+    "properties": {},
+    "required": []
+}
