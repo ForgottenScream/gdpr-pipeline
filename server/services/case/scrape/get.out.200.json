@@ -1,0 +1,26 @@
+{
+    "description": "Successfully triggered scraping of all cases from ICO and CMS sources.",
+    "content": {
+        "application/json": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean",
+                        "description": "Indicates if the scrape was triggered successfully.",
+                        "example": true
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "Message describing the scrape status.",
+                        "example": "ICO and CMS scrape services executed successfully"
+                    }
+                }
+            },
+            "example": {
+                "success": true,
+                "message": "ICO and CMS scrape services executed successfully"
+            }
+        }
+    }
+}

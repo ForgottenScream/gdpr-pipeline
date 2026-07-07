@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "boolean",
+      "description": "Indicates if the operation was successful"
+    },
+    "data": {
+      "type": "array",
+      "description": "List of case names and the count",
+      "properties": {
+          "name": {
+              "type": "string-not-empty"
+          },
+          "total_count": {
+              "type": "string-not-empty"
+          }
+      }
+    }
+  },
+  "required": [
+      "result",
+      "data"
+  ]
+}

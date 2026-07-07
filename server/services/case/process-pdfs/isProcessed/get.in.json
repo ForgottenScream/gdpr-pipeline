@@ -1,0 +1,7 @@
+{
+    "tags": ["case"],
+    "summary": "Check Processed PDFs Count",
+    "description": "Returns the count of cases where PDFs have been processed (is_processed = true).",
+    "properties": {},
+    "required": []
+}

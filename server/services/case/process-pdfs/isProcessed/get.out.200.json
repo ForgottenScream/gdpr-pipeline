@@ -1,0 +1,20 @@
+{
+    "description": "Successfully retrieved count of processed PDF cases.",
+    "content": {
+        "application/json": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "type": "integer",
+                        "description": "Number of cases with processed PDFs.",
+                        "example": 1542
+                    }
+                }
+            },
+            "example": {
+                "count": 1542
+            }
+        }
+    }
+}

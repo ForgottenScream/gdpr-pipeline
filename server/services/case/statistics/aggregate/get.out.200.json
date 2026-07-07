@@ -1,0 +1,56 @@
+{
+    "description": "Successfully retrieved aggregated case data grouped by DPA country code and case info.",
+    "content": {
+        "application/json": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "boolean",
+                        "description": "Indicates if the request was successful.",
+                        "example": true
+                    },
+                    "data": {
+                        "type": "array",
+                        "description": "List of aggregated case data grouped by DPA country code and case info.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "dpa_country_code": {
+                                    "type": "string",
+                                    "description": "Country code of the DPA (e.g., 'ES', 'DE').",
+                                    "example": "ES"
+                                },
+                                "case_info": {
+                                    "type": "string",
+                                    "description": "Controller or summary of the case.",
+                                    "example": "Vodafone España, S.A.U."
+                                },
+                                "case_count": {
+                                    "type": "integer",
+                                    "description": "Number of cases for the DPA and case info combination.",
+                                    "example": 154
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "example": {
+                "result": true,
+                "data": [
+                    {
+                        "dpa_country_code": "ES",
+                        "case_info": "Private individual",
+                        "case_count": 154
+                    },
+                    {
+                        "dpa_country_code": "ES",
+                        "case_info": "Vodafone España, S.A.U.",
+                        "case_count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

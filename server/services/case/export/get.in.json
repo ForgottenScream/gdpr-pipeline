@@ -1,0 +1,7 @@
+{
+    "tags": ["case"],
+    "summary": "Export All Case Data as CSV",
+    "description": "Exports all case-related database tables as CSV files, then packages them into a downloadable ZIP archive. Generates CSV files for each table in the public schema (excluding netuno tables and internal columns).",
+    "properties": {},
+    "required": []
+}

@@ -1,0 +1,9 @@
+{
+    "tags":[
+      "CMS"
+    ],
+    "summary": "Fetches All CMS Cases",
+    "description": "All cases from the CMS database will be fetched.",
+    "type": "object",
+    "properties": {}
+}

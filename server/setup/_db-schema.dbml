@@ -1,0 +1,57 @@
+Table case {
+  id int [pk, increment]
+  case_uid varchar(250) [not null, unique, note: 'UID']
+  controller varchar(250) [not null, note: 'Controller']
+  date date [not null, note: 'Date']
+  date_quality_id int [not null, ref: > case_date_quality.id, note: 'Date Quality']
+  document_url varchar(250) [note: 'Document URL']
+  dpa_id int [not null, ref: > dpa.id, note: 'DPA']
+  fine decimal(30, 14) [note: 'Fine']
+  is_processed boolean [not null, note: 'Is Processed']
+  legal_basis varchar(250) [note: 'Legal Basis']
+  sector_id int [ref: > case_sector.id, note: 'Sector']
+  source varchar(250) [not null, unique, note: 'Source']
+  summary text [note: 'Summary']
+  type_id int [ref: > case_type.id, note: 'Type']
+  Note: 'Case'
+}
+
+Table case_date_quality {
+  id int [pk, increment]
+  quality varchar(250) [not null, unique, note: 'Quality']
+  Note: 'Date Quality'
+}
+
+Table case_sector {
+  id int [pk, increment]
+  name varchar(250) [not null, unique, note: 'Name']
+  Note: 'Sector'
+}
+
+Table case_type {
+  id int [pk, increment]
+  name varchar(250) [not null, unique, note: 'Name']
+  Note: 'Type'
+}
+
+Table dpa {
+  id int [pk, increment]
+  code_id int [not null, ref: > dpa_country_code.id, note: 'Code']
+  name varchar(250) [not null, unique, note: 'Name']
+  source_type_id int [not null, ref: > dpa_source_type.id, note: 'Source Type']
+  Note: 'DPA'
+}
+
+Table dpa_country_code {
+  id int [pk, increment]
+  code varchar(250) [not null, unique, note: 'code']
+  name varchar(250) [not null, unique, note: 'Name']
+  Note: 'Country Code'
+}
+
+Table dpa_source_type {
+  id int [pk, increment]
+  type varchar(250) [not null, unique, note: 'Type']
+  Note: 'Source Type'
+}
+

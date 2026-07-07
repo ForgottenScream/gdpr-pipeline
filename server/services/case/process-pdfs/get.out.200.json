@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean",
+      "description": "Whether the processing operation was successful",
+      "example": true
+    },
+    "message": {
+      "type": "string",
+      "description": "Summary message with processing statistics (cases processed, success/failure counts)",
+      "example": "Processed 3 cases (1 updated, 1 skipped, 1 failed)."
+    }
+  },
+  "example": {
+    "success": true,
+    "message": "Processed 3 cases (1 updated, 1 skipped, 1 failed)."
+  }
+}

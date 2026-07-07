@@ -1,0 +1,9 @@
+{
+    "tags":[
+      "ICO"
+    ],
+    "summary": "Fetches All ICO Cases",
+    "description": "All cases from the ICO will be fetched.",
+    "type": "object",
+    "properties": {}
+}

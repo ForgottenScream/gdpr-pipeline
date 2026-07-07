@@ -1,0 +1,12 @@
+{
+    "description": "CSV export of all tables successful. Returns ZIP file for download.",
+    "content": {
+        "application/zip": {
+            "schema": {
+                "type": "object",
+                "properties": {}
+            },
+            "example": "Binary ZIP file containing CSV exports of all tables"
+        }
+    }
+}

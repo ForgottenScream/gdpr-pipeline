@@ -1,0 +1,11 @@
+{
+  "tags":[
+    "case"
+  ],
+  "summary": "Total Case Count",
+  "description": "Retrieve all case names and total count.",
+  "type": "object",
+  "properties": {
+    }
+  }
+}

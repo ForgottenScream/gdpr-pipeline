@@ -1,0 +1,55 @@
+{
+    "description": "Successfully executed LLM analysis on case datasets.",
+    "content": {
+        "application/json": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "array",
+                        "description": "List of LLM analysis results for each task.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "prompt": {
+                                    "type": "string",
+                                    "description": "The analysis prompt sent to the LLM.",
+                                    "example": "Analyze the attached dataset of ICO enforcement cases..."
+                                },
+                                "response": {
+                                    "type": "string",
+                                    "description": "The LLM's analysis response.",
+                                    "example": "The ICO enforcement shows a focus on..."
+                                },
+                                "row_count": {
+                                    "type": "integer",
+                                    "description": "Number of rows in the dataset analyzed.",
+                                    "example": 200
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "example": {
+                "result": [
+                    {
+                        "prompt": "Analyze the attached dataset of ICO enforcement cases. How does the ICO's enforcement of UK GDPR Articles compare to PECR/DPA 2018 in terms of violation frequency and penalty severity?",
+                        "response": "The analysis shows that UK GDPR Articles...",
+                        "row_count": 150
+                    },
+                    {
+                        "prompt": "Are the ICO cases that are fetched from CMS (secondary source) the same as the ICO cases from ICO themselves (primary source)?",
+                        "response": "The comparison reveals that...",
+                        "row_count": 200
+                    },
+                    {
+                        "prompt": "How do the enforcement strategies of Ireland's DPC, Spain's AEPD, and France's CNIL compare...",
+                        "response": "Ireland's DPC focuses on...",
+                        "row_count": 200
+                    }
+                ]
+            }
+        }
+    }
+}

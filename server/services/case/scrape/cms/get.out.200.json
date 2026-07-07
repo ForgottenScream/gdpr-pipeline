@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean",
+      "description": "Indicates if the operation was successful"
+    },
+    "message": {
+      "type": "string",
+      "description": "A message describing the result"
+    }
+  },
+  "required": ["success", "message"]
+}
